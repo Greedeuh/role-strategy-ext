@@ -45,8 +45,7 @@ public class MyRootAction implements RootAction {
         return "role-strategy-ext"; 
     }
     
-    @RequirePOST()
-    public void doSidAssignedRoles(StaplerRequest req, StaplerResponse rsp, @QueryParameter(required = true) String sid) throws IOException { 
+    public void doGetSidAssignedRoles(StaplerRequest req, StaplerResponse rsp, @QueryParameter(required = true) String sid) throws IOException { 
     	
     	Jenkins.getInstance().checkPermission(Jenkins.ADMINISTER);
     	
@@ -172,7 +171,7 @@ public class MyRootAction implements RootAction {
     }
     
     @RequirePOST()
-    public void doSidUnssignedRoles(StaplerRequest req, StaplerResponse rsp, @QueryParameter(required = true) String sid,@QueryParameter(required = true) String roleName, @QueryParameter(required = true) String type) throws IOException { 
+    public void doUnassignSidRole(StaplerRequest req, StaplerResponse rsp, @QueryParameter(required = true) String sid,@QueryParameter(required = true) String roleName, @QueryParameter(required = true) String type) throws IOException { 
     	
     	Jenkins.getInstance().checkPermission(Jenkins.ADMINISTER);
     	
