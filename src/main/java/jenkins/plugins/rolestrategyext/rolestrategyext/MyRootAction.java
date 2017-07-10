@@ -11,6 +11,7 @@ import java.util.regex.Pattern;
 import org.kohsuke.stapler.QueryParameter;
 import org.kohsuke.stapler.StaplerRequest;
 import org.kohsuke.stapler.StaplerResponse;
+import org.kohsuke.stapler.interceptor.RequirePOST;
 
 import com.michelin.cio.hudson.plugins.rolestrategy.Role;
 import com.michelin.cio.hudson.plugins.rolestrategy.RoleBasedAuthorizationStrategy;
@@ -44,6 +45,7 @@ public class MyRootAction implements RootAction {
         return "role-strategy-ext"; 
     }
     
+    @RequirePOST()
     public void doSidAssignedRoles(StaplerRequest req, StaplerResponse rsp, @QueryParameter(required = true) String sid) throws IOException { 
     	
     	Jenkins.getInstance().checkPermission(Jenkins.ADMINISTER);
@@ -169,6 +171,7 @@ public class MyRootAction implements RootAction {
 		}
     }
     
+    @RequirePOST()
     public void doSidUnssignedRoles(StaplerRequest req, StaplerResponse rsp, @QueryParameter(required = true) String sid,@QueryParameter(required = true) String roleName, @QueryParameter(required = true) String type) throws IOException { 
     	
     	Jenkins.getInstance().checkPermission(Jenkins.ADMINISTER);
@@ -211,6 +214,7 @@ public class MyRootAction implements RootAction {
     	return null;
     }
     
+    @RequirePOST()
     public void doUpdateRole(StaplerRequest req, StaplerResponse rsp, @QueryParameter(required = true) String name, @QueryParameter(required = true) String type, @QueryParameter(required = false) String newName, @QueryParameter(required = false) String newPattern) throws IOException, NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException { 
     	
     	Jenkins.getInstance().checkPermission(Jenkins.ADMINISTER);
