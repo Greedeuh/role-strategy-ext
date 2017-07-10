@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Built-By: root
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_131
+Extension-Name: role-strategy-ext
+Specification-Title: Role Strategy Plugin Extension add some web API f
+ eatures to Role based strategy plugin.
+Specification-Vendor: Rectorat de Rennes
+Implementation-Vendor: Rectorat de Rennes
+Implementation-Title: role-strategy-ext
+Implementation-Version: 1.0-SNAPSHOT
+Group-Id: role-strategy-ext
+Short-Name: role-strategy-ext
+Long-Name: Role Strategy Plugin Extension
+Url: https://wiki.jenkins-ci.org/display/JENKINS/TODO+Plugin
+Plugin-Version: 1.0-SNAPSHOT (private-07/10/2017 08:48-root)
+Hudson-Version: 1.625.3
+Jenkins-Version: 1.625.3
+Plugin-Dependencies: role-strategy:2.5.0
+Plugin-Developers: 
+

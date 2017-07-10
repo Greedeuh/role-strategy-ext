@@ -1,0 +1,45 @@
+Jul 07, 2017 9:34:24 AM org.eclipse.jetty.util.log.Log initialized
+INFO: Logging initialized @350ms
+Picking up existing exploded jenkins.war at /root/eclipse-workspace/role-strategy-ext/target/jenkins-for-test
+Jul 07, 2017 9:34:26 AM org.eclipse.jetty.server.handler.ContextHandler setContextPath
+WARNING: Empty contextPath
+Jul 07, 2017 9:34:26 AM org.eclipse.jetty.server.Server doStart
+INFO: jetty-9.2.12.v20150709
+Jul 07, 2017 9:34:26 AM org.eclipse.jetty.webapp.StandardDescriptorProcessor visitServlet
+INFO: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+Jul 07, 2017 9:34:26 AM org.eclipse.jetty.server.handler.ContextHandler doStart
+INFO: Started o.e.j.w.WebAppContext@771d1ffb{/,file:/root/eclipse-workspace/role-strategy-ext/target/jenkins-for-test/,AVAILABLE}{/root/eclipse-workspace/role-strategy-ext/target/jenkins-for-test}
+Jul 07, 2017 9:34:26 AM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@173f73e7{HTTP/1.1}{localhost:34167}
+Jul 07, 2017 9:34:26 AM org.eclipse.jetty.server.Server doStart
+INFO: Started @2492ms
+Jul 07, 2017 9:34:26 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Jul 07, 2017 9:34:34 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Jul 07, 2017 9:34:34 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Jul 07, 2017 9:34:34 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Jul 07, 2017 9:34:34 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Jul 07, 2017 9:34:36 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Jul 07, 2017 9:34:38 AM org.jenkinsci.main.modules.sshd.SSHD start
+INFO: Started SSHD at port 34413
+Jul 07, 2017 9:34:38 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Jul 07, 2017 9:34:38 AM org.eclipse.jetty.server.Server doStart
+INFO: jetty-9.2.12.v20150709
+Jul 07, 2017 9:34:38 AM org.eclipse.jetty.server.handler.ContextHandler doStart
+INFO: Started o.e.j.s.ServletContextHandler@9aa2002{/,null,AVAILABLE}
+Jul 07, 2017 9:34:38 AM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@5a2fa51f{HTTP/1.1}{0.0.0.0:42750}
+Jul 07, 2017 9:34:38 AM org.eclipse.jetty.server.Server doStart
+INFO: Started @14164ms
+Jul 07, 2017 9:34:40 AM org.eclipse.jetty.server.AbstractConnector doStop
+INFO: Stopped ServerConnector@173f73e7{HTTP/1.1}{localhost:0}
+Jul 07, 2017 9:34:40 AM org.eclipse.jetty.server.handler.ContextHandler doStop
+INFO: Stopped o.e.j.w.WebAppContext@771d1ffb{/,file:/root/eclipse-workspace/role-strategy-ext/target/jenkins-for-test/,UNAVAILABLE}{/root/eclipse-workspace/role-strategy-ext/target/jenkins-for-test}
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
