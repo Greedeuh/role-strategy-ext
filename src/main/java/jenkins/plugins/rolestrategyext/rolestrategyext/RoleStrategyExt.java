@@ -24,7 +24,7 @@ import hudson.security.Permission;
 import jenkins.model.Jenkins;
 
 @Extension 
-public class MyRootAction implements RootAction {
+public class RoleStrategyExt implements RootAction {
 	
 	private RoleBasedAuthorizationStrategy strat;
 	private StaplerRequest req;
@@ -32,12 +32,12 @@ public class MyRootAction implements RootAction {
 	
     @Override 
     public String getIconFileName() { 
-        return "document.png"; 
+        return null; 
     } 
 
     @Override 
     public String getDisplayName() { 
-        return "My Root Action"; 
+        return null; 
     } 
 
     @Override 
